@@ -3,6 +3,18 @@
 Unofficial utility for configuring SHURE MV7 microphones for Linux and macOS.
 
 
+## About this fork
+This is a  fork of [matteodelabre/mv7config](https://github.com/matteodelabre/mv7config),
+originally created by [Mattéo Delabre](https://github.com/matteodelabre).
+
+It includes:
+- macOS and new `hid.Device(VID, PID)` support by [flagsoft](https://github.com/flagsoft)
+(upstream [PR #2](https://github.com/matteodelabre/mv7config/pull/2)),
+- additional HID compatibility fix and Linux support by [Hubert](https://github.com/hubert-tomecki).
+This fork is distributed under the same terms as the upstream project:
+the GNU General Public License version 3 (GPL-3.0) or (at your option)
+any later version. See `LICENSE` for details.
+
 ## Linux
 ![Screenshot of the configuration panel](res/screenshot.png)
 
@@ -311,6 +323,30 @@ Solution:
 % brew install libhandy
 ```
 
+## Copyright
+
+Copyright © 2021–2025  
+**Mattéo Delabre** — original author of *mv7config*  
+https://github.com/matteodelabre
+
+Additional contributions © 2024  
+**flagsoft** — macOS and HID `Device(VID, PID)` support  
+https://github.com/flagsoft
+
+Modifications © 2025  
+**Hubert** — Linux HID compatibility fixes and maintenance of this fork  
+https://github.com/hubert-tomecki
 
 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
