@@ -39,7 +39,7 @@ class TextHID:
           self._hid.write(command + [0] * (64 - len(command)))
 
     def read_message(self, timeout_ms=0):
-        data = self._hid.read(max_length=64, timeout_ms=timeout_ms)
+        data = self._hid.read(64, timeout=timeout_ms)
 
         if not data:
             return None
